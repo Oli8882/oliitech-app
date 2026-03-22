@@ -1,0 +1,4 @@
+include ':app'
+def flutterSdkPath = providers.exec {
+    commandLine 'flutter', '--version', '--machine'
+}.standardOutput.asText.get()
